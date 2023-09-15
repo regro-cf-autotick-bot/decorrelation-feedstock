@@ -1,5 +1,5 @@
 {% set name = "decorrelation" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/decorrelation-{{ version }}.tar.gz
-  sha256: bdc067aacc3088a542a5a177291d4a537391fcd0d94c6cbf80b6e297ee563068
+  sha256: 7538be4f9e84d9970da58c8beb5a1ecf4db35b4b6a32f9d44ad33b658765ef9f
 
 build:
   noarch: python
@@ -26,6 +26,9 @@ requirements:
     - dask
     - colorcet
     - zarr
+    - fastcore
+    - pandas
+    - toml
 
 test:
   imports:
