@@ -1,5 +1,5 @@
 {% set name = "decorrelation" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/decorrelation-{{ version }}.tar.gz
-  sha256: 105f1313229d00f0e5dfe1a28e8aa0afb5da356a72b4d3f99d1df6e1a68c7ce5
+  sha256: e6ac5b09c1421f9c74367459ad87b697f4ae66c1442aa4850e277541fb5e9f4e
 
 build:
   noarch: python
