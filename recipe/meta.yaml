@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - pip
   run:
-    - python >=3.7
+    - python >=3.10
     - numpy
     - scipy
     - matplotlib-base
@@ -34,7 +34,9 @@ requirements:
     - fastcore
     - pandas
     - toml
-
+    - numcodecs
+    - spatialpandas
+    - cupy >=13.0
 test:
   imports:
     - decorrelation
